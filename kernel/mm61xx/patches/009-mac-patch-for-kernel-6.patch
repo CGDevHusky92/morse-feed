@@ -13,6 +13,17 @@ Subject: [PATCH] Switch morse mac.c from .chandef to .chanreq plus smaller
  	return true;
  }
 
+@@ -2053,8 +2053,8 @@
+ 			/* Queues are stopped, probably filled */
+ 			break;
+
+-		if (aci == MORSE_ACI_BE)
+-			break;
++		//if (aci == MORSE_ACI_BE)
++		//	break;
+ 	}
+ }
+
 @@ -2245,7 +2245,7 @@
  	return 0;
  }
